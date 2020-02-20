@@ -31,6 +31,9 @@ public class Service extends HttpServlet {
 		 * 그러나 쿼리값이 전달이 되지 않았음!!!(페이지 주소 참고)
 		 * 쿼리값(주소 + ?cnt=원하는 횟수) 입력필요*/
 		
+		/*getParameter()메서드의 경우 String타입을 리턴하는반면,
+		getAttribute()는 Object 타입을 리턴하기 때문에 주로 빈 객체나 다른 클래스를 받아올때 사용된다.*/
+		
 		for(int i=0; i<cnt; i++) {
 			out.println((i+1) + " : 안녕 서블릿~~~!<br/>");
 		}
